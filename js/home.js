@@ -3,7 +3,9 @@ function accessId(id){
 }
 
 
-const time = new Date().toLocaleString();
+function time(){
+  return new Date().toLocaleString();
+}
 
 
 // History page to Donate Page
@@ -88,7 +90,7 @@ document.getElementById('donate-now-btn1').addEventListener('click', function(){
         Tk Donated For
         <span id="donated-title">${donateHeadingFirst}</span>
         </h2>
-        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
     </div>
   `;
@@ -143,7 +145,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
         Tk Donated For
         <span id="donated-title">${donateHeadingSecond}</span>
         </h2>
-        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
     </div>
   `;
@@ -198,7 +200,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
         Tk Donated For
         <span id="donated-title">${donateHeadingThird}</span>
         </h2>
-        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
     </div>
   `;
