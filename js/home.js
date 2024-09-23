@@ -3,6 +3,9 @@ function accessId(id){
 }
 
 
+const time = new Date().toLocaleString();
+
+
 // History page to Donate Page
 document.getElementById('history-page').addEventListener('click', function(){
   const donateSection = document.getElementById('history-content');
@@ -68,12 +71,28 @@ document.getElementById('donate-now-btn1').addEventListener('click', function(){
   accessId('donated-money1').innerText = donatedCurrentMoney1;
   
 
-
-
   const modalBtn1 = document.getElementById('my-modal-1');
   modalBtn1.showModal();
 
   document.getElementById('donate-value1').value = "";
+
+
+  
+  const donateHeadingFirst = document.getElementById('donate-heading-first').innerText;
+  const historyContent = document.getElementById('history-content');
+  const historyPage1 = `
+    <div class="w-full border rounded-lg mb-2">
+      <div class="card-body">
+        <h2 class="text-xl font-bold">
+        <span id="donated-amount">${donateValue1}</span>
+        Tk Donated For
+        <span id="donated-title">${donateHeadingFirst}</span>
+        </h2>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+      </div>
+    </div>
+  `;
+  historyContent.innerHTML += historyPage1;
 });
 
 
@@ -106,12 +125,29 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
   const donatedCurrentMoney2 = donateValueNumber2 + donatedMoneyNumber2;
   
   accessId('donated-money2').innerText = donatedCurrentMoney2;
-  
+
 
   const modalBtn2 = document.getElementById('my-modal-2');
   modalBtn2.showModal();
 
   document.getElementById('donate-value2').value = "";
+
+
+  const donateHeadingSecond = document.getElementById('donate-heading-second').innerText;
+  const historyContent = document.getElementById('history-content');
+  const historyPage2 = `
+    <div class="w-full border rounded-lg mb-2">
+      <div class="card-body">
+        <h2 class="text-xl font-bold">
+        <span id="donated-amount">${donateValue2}</span>
+        Tk Donated For
+        <span id="donated-title">${donateHeadingSecond}</span>
+        </h2>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+      </div>
+    </div>
+  `;
+  historyContent.innerHTML += historyPage2;
 });
 
 
@@ -145,8 +181,30 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
   
   accessId('donated-money3').innerText = donatedCurrentMoney3;
 
+
   const modalBtn3 = document.getElementById('my-modal-3');
   modalBtn3.showModal();
 
   document.getElementById('donate-value3').value = "";
+
+
+  const donateHeadingThird = document.getElementById('donate-heading-third').innerText;
+  const historyContent = document.getElementById('history-content');
+  const historyPage3 = `
+    <div class="w-full border rounded-lg mb-2">
+      <div class="card-body">
+        <h2 class="text-xl font-bold">
+        <span id="donated-amount">${donateValue3}</span>
+        Tk Donated For
+        <span id="donated-title">${donateHeadingThird}</span>
+        </h2>
+        <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time}</span></p>
+      </div>
+    </div>
+  `;
+  historyContent.innerHTML += historyPage3;
 });
+
+
+
+
