@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs</title>
+  <title>Assignment-5 Blog Page</title>
   <!-- Google Fonts link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,27 +29,26 @@
 </head>
 
 <body>
-  <header class=""></header>
-  <nav class="bg-[#F9F7F3] pt-4 pb-10 ">
-    <div class="container mx-auto flex justify-between">
-      <button class="text-xl btn font-semibold bg-primary">Blog</button>
-      <div class="flex items-center space-x-3">
-        <div>
-          <img src="./assets/logo.png" alt="">
+  <header class="sticky top-0">
+    <nav class="bg-[#F9F7F3] pt-4 pb-8 ">
+      <div class="container mx-auto flex justify-between px-5">
+        <button class="text-xl btn font-semibold bg-primary"><a href="./blog.html">Blog</a></button>
+        <div class="hidden lg:block">
+          <div class="flex items-center space-x-3">
+            <div>
+              <img src="./assets/logo.png" alt="">
+            </div>
+            <h3 class="text-xl font-semibold ">Donate Bangladesh</h3>
+          </div>
         </div>
-        <h3 class="text-xl font-semibold ">Donate Bangladesh</h3>
+        <div class="flex items-center space-x-1">
+          <img src="./assets/coin.png" alt="">
+          <p class="text-xl font-medium"><span>5500</span> BDT</p>
+        </div>
       </div>
-      <div class="flex items-center space-x-1">
-        <img src="./assets/coin.png" alt="">
-        <p class="text-xl font-medium"><span>5500</span> BDT</p>
-      </div>
-    </div>
-  </nav>
-
-  <section class="flex items-center justify-center gap-5">
-    
-  </section>
+    </nav>
   </header>
+
   <main>
     <section class="container mx-auto">
       <h2 class="text-3xl font-bold">Important FAQ</h2>
@@ -86,6 +85,10 @@
       </div>
     </section>
   </main>
+
+
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

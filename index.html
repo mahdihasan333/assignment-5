@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 5</title>
+  <title>Assignment-5 Home Page</title>
   <!-- Google Fonts link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,9 @@
 
 <body>
   <header class="sticky top-0">
-    <nav class="bg-[#F9F7F3] pt-4 pb-10 ">
+    <nav class="bg-[#F9F7F3] pt-4 pb-8 ">
       <div class="container mx-auto flex justify-between px-5">
-        <button class="text-xl btn font-semibold bg-primary">Blog</button>
+        <button class="text-xl btn font-semibold bg-primary"><a href="./blog.html">Blog</a></button>
         <div class="hidden lg:block">
           <div class="flex items-center space-x-3">
             <div>
@@ -139,15 +139,17 @@
             also support rebuilding efforts and contribute to the long-term recovery of the affected region.
             Additionally, your donation can help prevent.</p>
           <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-          <button class="btn" onclick="my_modal_1.showModal()">Donate Now</button>
+          <button class="btn bg-primary" onclick="my_modal_1.showModal()">Donate Now</button>
           <dialog id="my_modal_1" class="modal">
 
 
             <div class="modal-box flex flex-col items-center justify-center space-y-3">
               <h3 class="text-3xl font-bold">Congrates!</h3>
-              <img src="" alt="">
+              <div>
+                <img src="./assets/coin.png" alt="">
+              </div>
               <p class="py-4">You Have Donated for Humankind</p>
-              <h3>Successfully</h3>
+              <h3 class="text-2xl font-bold">Successfully</h3>
               <button class="btn text-lg">Close confirmation</button>
             </div>
 
