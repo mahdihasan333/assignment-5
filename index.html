@@ -29,23 +29,134 @@
 </head>
 
 <body>
-  <header class="bg-[#F9F7F3] pt-4 pb-10">
-    <nav class="container mx-auto flex justify-between">
-      <button class="text-xl btn font-semibold bg-primary">Blog</button>
-      <div class="flex items-center space-x-3">
-        <div>
-          <img src="./assets/logo.png" alt="">
+  <header class="sticky top-0">
+    <nav class="bg-[#F9F7F3] pt-4 pb-10 ">
+      <div class="container mx-auto flex justify-between px-5">
+        <button class="text-xl btn font-semibold bg-primary">Blog</button>
+        <div class="hidden lg:block">
+          <div class="flex items-center space-x-3">
+            <div>
+              <img src="./assets/logo.png" alt="">
+            </div>
+            <h3 class="text-xl font-semibold ">Donate Bangladesh</h3>
+          </div>
         </div>
-        <h3 class="text-xl font-semibold ">Donate Bangladesh</h3>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="./assets/coin.png" alt="">
-        <p class="text-xl font-medium"><span>5500</span> BDT</p>
+        <div class="flex items-center space-x-1">
+          <img src="./assets/coin.png" alt="">
+          <p class="text-xl font-medium"><span>5500</span> BDT</p>
+        </div>
       </div>
     </nav>
-    
+
+    <section>
+      <div class="flex justify-center items-center mt-12 gap-5">
+        <button class="btn bg-pramary font-semibold text-2xl px-5">Donation</button>
+        <button class="btn bg-pramary font-semibold text-2xl px-5">History</button>
+      </div>
+    </section>
   </header>
-  <main></main>
+
+  <main class="mt-20 px-5">
+    <!-- first section -->
+    <section class="container mx-auto border mb-5 p-4 rounded-xl shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <div>
+          <img class="w-full" src="./assets/noakhali.png" alt="">
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <button class="btn w-fit">
+            <img src="./assets/coin.png" alt="">
+            <span>0</span>
+            <span>BDT</span>
+          </button>
+          <h3 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class="text-lg">The recent floods in Noakhali, Bangladesh have devastated countless lives and livelihoods.
+            Homes have been
+            destroyed, crops have been submerged, and infrastructure has been damaged. The situation is dire, and the
+            affected communities urgently need our support. By donating to flood relief efforts, you can make a tangible
+            difference in the lives of those who have been impacted by this natural disaster. Your contribution will
+            help provide essential supplies such as food, water, shelter, and medical care to those in need. It will
+            also support rebuilding efforts and contribute to the long-term recovery of the affected region.
+            Additionally, your donation can help prevent.</p>
+          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <button class="btn w-full block bg-primary">Donate Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section -->
+    <section class="container mx-auto border mb-5 p-4 rounded-xl shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <div>
+          <img class="w-full" src="./assets/noakhali.png" alt="">
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <button class="btn w-fit">
+            <img src="./assets/coin.png" alt="">
+            <span>0</span>
+            <span>BDT</span>
+          </button>
+          <h3 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class="text-lg">The recent floods in Noakhali, Bangladesh have devastated countless lives and livelihoods.
+            Homes have been
+            destroyed, crops have been submerged, and infrastructure has been damaged. The situation is dire, and the
+            affected communities urgently need our support. By donating to flood relief efforts, you can make a tangible
+            difference in the lives of those who have been impacted by this natural disaster. Your contribution will
+            help provide essential supplies such as food, water, shelter, and medical care to those in need. It will
+            also support rebuilding efforts and contribute to the long-term recovery of the affected region.
+            Additionally, your donation can help prevent.</p>
+          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <button class="btn w-full block bg-primary">Donate Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- third section -->
+    <section class="container mx-auto border mb-5 p-4 rounded-xl shadow-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <div>
+          <img class="w-full" src="./assets/noakhali.png" alt="">
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <button class="btn w-fit">
+            <img src="./assets/coin.png" alt="">
+            <span>0</span>
+            <span>BDT</span>
+          </button>
+          <h3 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class="text-lg">The recent floods in Noakhali, Bangladesh have devastated countless lives and livelihoods.
+            Homes have been
+            destroyed, crops have been submerged, and infrastructure has been damaged. The situation is dire, and the
+            affected communities urgently need our support. By donating to flood relief efforts, you can make a tangible
+            difference in the lives of those who have been impacted by this natural disaster. Your contribution will
+            help provide essential supplies such as food, water, shelter, and medical care to those in need. It will
+            also support rebuilding efforts and contribute to the long-term recovery of the affected region.
+            Additionally, your donation can help prevent.</p>
+          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <button class="btn" onclick="my_modal_1.showModal()">Donate Now</button>
+          <dialog id="my_modal_1" class="modal">
+
+
+            <div class="modal-box flex flex-col items-center justify-center space-y-3">
+              <h3 class="text-3xl font-bold">Congrates!</h3>
+              <img src="" alt="">
+              <p class="py-4">You Have Donated for Humankind</p>
+              <h3>Successfully</h3>
+              <button class="btn text-lg">Close confirmation</button>
+            </div>
+
+
+          </dialog>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
