@@ -39,7 +39,7 @@ document.getElementById('donate-page').addEventListener('click', function(){
 
 
 // card 1
-document.getElementById('Donate-now-btn1').addEventListener('click', function(){
+document.getElementById('donate-now-btn1').addEventListener('click', function(){
   const donateValue1 = document.getElementById('donate-value1').value;
   const donateValueNumber1 = parseFloat(donateValue1);
   
@@ -67,12 +67,19 @@ document.getElementById('Donate-now-btn1').addEventListener('click', function(){
   
   accessId('donated-money1').innerText = donatedCurrentMoney1;
   
+
+
+
+  const modalBtn1 = document.getElementById('my-modal-1');
+  modalBtn1.showModal();
+
+  document.getElementById('donate-value1').value = "";
 });
 
 
 
 // card 2
-document.getElementById('Donate-now-btn2').addEventListener('click', function(){
+document.getElementById('donate-now-btn2').addEventListener('click', function(){
   const donateValue2 = document.getElementById('donate-value2').value;
   const donateValueNumber2 = parseFloat(donateValue2);
   
@@ -100,12 +107,17 @@ document.getElementById('Donate-now-btn2').addEventListener('click', function(){
   
   accessId('donated-money2').innerText = donatedCurrentMoney2;
   
+
+  const modalBtn2 = document.getElementById('my-modal-2');
+  modalBtn2.showModal();
+
+  document.getElementById('donate-value2').value = "";
 });
 
 
 
 // card 3
-document.getElementById('Donate-now-btn3').addEventListener('click', function(){
+document.getElementById('donate-now-btn3').addEventListener('click', function(){
   const donateValue3 = document.getElementById('donate-value3').value;
   const donateValueNumber3 = parseFloat(donateValue3);
   
@@ -132,4 +144,9 @@ document.getElementById('Donate-now-btn3').addEventListener('click', function(){
   const donatedCurrentMoney3 = donateValueNumber3 + donatedMoneyNumber3;
   
   accessId('donated-money3').innerText = donatedCurrentMoney3;
+
+  const modalBtn3 = document.getElementById('my-modal-3');
+  modalBtn3.showModal();
+
+  document.getElementById('donate-value3').value = "";
 });
