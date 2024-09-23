@@ -86,9 +86,8 @@ document.getElementById('donate-now-btn1').addEventListener('click', function(){
     <div class="w-full border rounded-lg mb-2">
       <div class="card-body">
         <h2 class="text-xl font-bold">
-        <span id="donated-amount">${donateValue1}</span>
-        Tk Donated For
-        <span id="donated-title">${donateHeadingFirst}</span>
+          <span>${donateValue1} Tk Donated For</span>
+          <span>${donateHeadingFirst}</span>
         </h2>
         <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
@@ -141,9 +140,8 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
     <div class="w-full border rounded-lg mb-2">
       <div class="card-body">
         <h2 class="text-xl font-bold">
-        <span id="donated-amount">${donateValue2}</span>
-        Tk Donated For
-        <span id="donated-title">${donateHeadingSecond}</span>
+          <span>${donateValue2} Tk Donated For</span>
+          <span>${donateHeadingSecond}</span>
         </h2>
         <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
@@ -196,9 +194,8 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
     <div class="w-full border rounded-lg mb-2">
       <div class="card-body">
         <h2 class="text-xl font-bold">
-        <span id="donated-amount">${donateValue3}</span>
-        Tk Donated For
-        <span id="donated-title">${donateHeadingThird}</span>
+          <span>${donateValue3} Tk Donated For</span>
+          <span >${donateHeadingThird}</span>
         </h2>
         <p class="p-4 bg-slate-100 rounded-xl">Date <span id="donation-time">${time()}</span></p>
       </div>
