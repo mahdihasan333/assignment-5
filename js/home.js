@@ -2,18 +2,16 @@ function id(id) {
   return document.getElementById(id);
 };
 
-
-
 document.getElementById('Donate-now-btn1').addEventListener('click', function(){
   const donateValue1 = id('donate-value1').value;
   const donateNumber1 = parseFloat(donateValue1);
 
   if(isNaN(donateNumber1)) {
-    alert('Please Enter Valid Amount');
+    alert('Please Donate Valid Amount');
     return;
   }
   if(donateNumber1 <= 0){
-    alert('Please Enter Positive Amount');
+    alert('Please Donate Positive Amount');
     return;
   }
 
@@ -21,7 +19,7 @@ document.getElementById('Donate-now-btn1').addEventListener('click', function(){
   const updateCurrentBalance = currentBalance - donateValue1;
 
   if(updateCurrentBalance < 0) {
-    alert("Insufficient Balance You Can't Donate");
+    alert("Not enough Balance You Can't Donate");
     return;
   }
   
